@@ -1,0 +1,35 @@
+2020-04-15 21:26:39,205 [main] WARN  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:418) -  [DUBBO] Ignore empty notify urls for subscribe url provider://169.254.214.145:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&category=configurators&check=false&delay=-1&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=6588&revision=2.5.3&side=provider&timestamp=1586957197385, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-04-15 21:26:39,415 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Failed to start jetty server on 169.254.214.145:8088, cause: Address already in use: bind, dubbo version: 2.5.3, current host: 169.254.214.145
+java.lang.IllegalStateException: Failed to start jetty server on 169.254.214.145:8088, cause: Address already in use: bind
+	at com.alibaba.dubbo.container.jetty.JettyContainer.start(JettyContainer.java:80)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.mortbay.jetty.nio.SelectChannelConnector.open(SelectChannelConnector.java:216)
+	at org.mortbay.jetty.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:315)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.Server.doStart(Server.java:235)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.alibaba.dubbo.container.jetty.JettyContainer.start(JettyContainer.java:78)
+	... 1 more
+2020-04-15 21:36:42,290 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Failed to start jetty server on 169.254.214.145:8080, cause: Address already in use: bind, dubbo version: 2.5.3, current host: 169.254.214.145
+java.lang.IllegalStateException: Failed to start jetty server on 169.254.214.145:8080, cause: Address already in use: bind
+	at com.alibaba.dubbo.container.jetty.JettyContainer.start(JettyContainer.java:80)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.mortbay.jetty.nio.SelectChannelConnector.open(SelectChannelConnector.java:216)
+	at org.mortbay.jetty.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:315)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.Server.doStart(Server.java:235)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.alibaba.dubbo.container.jetty.JettyContainer.start(JettyContainer.java:78)
+	... 1 more
